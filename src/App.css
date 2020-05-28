@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+.card{
+display:flex;
+flex-direction:column;
+align-items: flex-start;
+}
+.flag{
+max-width:33vw;
+object-fit: fill;
+}

@@ -3,7 +3,7 @@ import Card from'./Card'
 const CardBox =(props)=>{
     return(
       
-    <div>
+    <div className='cardBox row'>
         {props.allcountries.map(country=>{
    console.log(country)
 
