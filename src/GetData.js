@@ -1,15 +1,17 @@
-import React, { useEffect } from 'react';
-
-
-
-let data;
-
-useEffect(() => {
-  const url = "https://restcountries.eu/rest/v2/all"
-  const response =  fetch(url)
-
-  const data =  response.json()
-  console.log(data)
-  return data
-}
-export default data;
+import React from 'react';
+import Card from './Card'
+const data =[];
+ let GetData = ()=> {return(
+  fetch('https://restcountries.eu/rest/v2/all')
+  .then(response => response.json())
+  .then(data =>{ return(
+ <div className ='CardBox'>
+     {data.map(
+         country=>{
+             <Card data={data}/>
+         }
+     )}
+ </div>
+)
+}))}
+export default GetData

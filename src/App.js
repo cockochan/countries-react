@@ -1,12 +1,14 @@
 import React from 'react';
 
 import './App.css';
-import data from'/.GetData/';
+import Allcountries from './countriesAll.json'
+import CardBox from'./CardBox'
 
 function App() {
+
   return (
-    <div className="App">
-    {data}
+    <div >
+<CardBox allcountries={Allcountries}/>
     </div>
   );
 }
