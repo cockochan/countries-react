@@ -36,12 +36,45 @@
     transform: rotate(360deg);
   }
 }
+.cardBox{
+  background-color:hsl(0, 0%, 98%);
+  padding:15px;
+  justify-content: space-around;
+}
 .card{
 display:flex;
 flex-direction:column;
 align-items: flex-start;
+background-color:hsl(0, 0%, 100%);
+box-shadow: 5px 10px #888888;
+margin:5px;
 }
 .flag{
-max-width:33vw;
-object-fit: fill;
+
+min-height:45vh;
+object-fit: cover;
+}
+.headerTop{
+  justify-content: space-between;
+  margin-bottom:5vh;
+  padding:15px;
+  align-items: center;
+}
+.subHeader{
+  justify-content: space-between;
+  margin-bottom:5vh;
+  padding:15px;
+  align-items: center;
+}
+.select{
+  margin-right:15px;
+  
+}
+.search{
+  margin-left:15px;
+  
+}
+.modeSelector{
+  margin-right:15px;
+  text-align: flex-end;
 }
