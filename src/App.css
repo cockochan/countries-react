@@ -46,13 +46,21 @@ display:flex;
 flex-direction:column;
 align-items: flex-start;
 background-color:hsl(0, 0%, 100%);
-box-shadow: 5px 10px #888888;
-margin:5px;
+box-shadow: 5px 5px 5px #888888;
+font-weight:14px ;
+padding-left:0px!important;
+padding-right:0px!important;
+margin:15px;
+}
+.option{
+  color:black;
 }
 .flag{
-
+padding:0px;
 min-height:45vh;
 object-fit: cover;
+padding-left:0px!important;
+padding-right:0px!important;
 }
 .headerTop{
   justify-content: space-between;

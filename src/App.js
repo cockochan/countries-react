@@ -8,6 +8,7 @@ function App() {
 
   return (
     <div >
+
       <Header />
 <CardBox allcountries={Allcountries}/>
     </div>
