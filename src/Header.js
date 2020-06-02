@@ -3,7 +3,8 @@ import Search from'./Search'
 import Select from './Select'
 
 
-const Header = ()=>{
+const Header = (props)=>{
+    
     return(
 <div className = 'header'>
     <div className='headerTop row'>
@@ -14,7 +15,7 @@ const Header = ()=>{
     </div>
     </div>
     <div className ='subHeader row'>
-        <Search />
+        <Search   {...props}/>
         <Select />
     </div>
 </div>

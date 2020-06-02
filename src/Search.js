@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-const Search =function() {
-    return(
-        <input className='search col-4' />
-    )
+const Search =(props) =>{
+  
 
-}
+      return ( <input className='search col-4' type='text' placeholder ="search"  onChange ={props.handleChange}/>)
+    }
 export default Search
+

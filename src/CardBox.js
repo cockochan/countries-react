@@ -5,7 +5,6 @@ const CardBox =(props)=>{
       
     <div className='cardBox row'>
         {props.allcountries.map(country=>{
-   console.log(country)
 
         return(
         <Card country={country}/>
