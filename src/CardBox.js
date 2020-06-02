@@ -7,7 +7,7 @@ const CardBox =(props)=>{
         {props.allcountries.map(country=>{
 
         return(
-        <Card country={country}/>
+        <Card country={country} />
         )
         }  )}
      </div>

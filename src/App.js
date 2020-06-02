@@ -8,20 +8,28 @@ import Header from './Header'
 
 
 function App() {
-  const [searchValue, setSearchValue] = useState('none')
-  function handleChange (event){
+  const [searchValue, setSearchValue] = useState('')
+  const [sendTorenderCountries, setSendTorenderCountries] = useState(Allcountries)
  
+  function handleChange (event){
+   
+    
     setSearchValue(event.target.value)
+   
+    const filCountries= (Allcountries.filter((el)=>{ return(el.name.toLowerCase().inculdes(searchValue))}))
+
+    setSendTorenderCountries(filCountries)
   }
   console.log(searchValue)
-  const filCountries = Allcountries.filter(cou=>{ cou.name.toLowerCase().inculdes(searchValue.toLowerCase())})
+ 
+  // let filCountries = ()=> {return filCountries = Allcountries.filter(cou=>{ cou.name.toLowerCase().inculdes(searchValue.toLowerCase())})}
   return (
     <div >
 
       <Header handleChange={handleChange}/>
-<CardBox allcountries={filCountries}/>
+<CardBox allcountries={sendTorenderCountries}/>
     </div>
   );
-}
 
+  }
 export default App;
