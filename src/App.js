@@ -18,7 +18,7 @@ function App() {
    
     const filCountries= (Allcountries.filter((el)=>{ 
       console.log(el.name) 
-      return(el.name.toLowerCase().includes(searchValue))}))
+      return(el.name.toLowerCase().includes(searchValue))||el.name.toLowerCase().includes(searchValue)}))
 
     setSendTorenderCountries(filCountries)
   }
