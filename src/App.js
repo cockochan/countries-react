@@ -16,7 +16,9 @@ function App() {
     
     setSearchValue(event.target.value)
    
-    const filCountries= (Allcountries.filter((el)=>{ return(el.name.toLowerCase().inculdes(searchValue))}))
+    const filCountries= (Allcountries.filter((el)=>{ 
+      console.log(el.name) 
+      return(el.name.toLowerCase().includes(searchValue))}))
 
     setSendTorenderCountries(filCountries)
   }
